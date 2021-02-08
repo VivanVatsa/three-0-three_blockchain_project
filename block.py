@@ -4,28 +4,34 @@ import json
 
 
 # function: to create a block
-def write_block():
+def write_block(borrower, lender, amount):
     data = {
-        "borrower": "Joma",
-        "lender": "Viktor",
-        "amount": 1000,
+        "borrower": borrower,
+        "lender": lender,
+        "amount": amount,
         "prev_block": {
             "hash": "",
             "filename": ""
         },
     }
 
+    current_block ='blockchain/' + 
+
     with open("test", "w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
         f.write("\n")
+        # f.write(text)
+        # f.writable
 
 
 # function: to check the integrity of data
+# def check_integrity():
+#     pass
 
 
 #  main driver
 def main():
-    write_block()
+    write_block(borrower="Ashika", lender="cole", amount=100)
 
 
 if __name__ == "__main__":
