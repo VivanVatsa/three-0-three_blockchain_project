@@ -16,6 +16,13 @@ def get_hash(prev_block):
     return hashlib.md5(content).hexdigest()
 
 
+# function: to ch   eck the integrity of data
+def check_integrity():
+    # get the directory of the files in the block
+    files = sorted(os.listdir(BLOCKCHAIN_DIR))
+    print(files)
+
+
 # function: to create a block
 def write_block(borrower, lender, amount):
 
@@ -40,14 +47,13 @@ def write_block(borrower, lender, amount):
         # f.writable
 
 
-# function: to check the integrity of data
-# def check_integrity():
-#     pass
-
-
 #  main driver
 def main():
-    write_block(borrower="Ashika", lender="cole", amount=100)
+    # write_block(borrower="Ashika", lender="cole", amount=100)
+    check_integrity()
+    # output
+    # ["1.json", "10", "11", "12", "2", "3", "4", "5", "6", "7", "8", "9"]
+    #
 
 
 if __name__ == "__main__":
