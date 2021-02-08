@@ -1,0 +1,9 @@
+{
+    "borrower": "Ashika",
+    "lender": "cole",
+    "amount": 100,
+    "prev_block": {
+        "hash": "bfb7f270b5985a8f9429e0a4c484fd44",
+        "filename": "7"
+    }
+}
