@@ -1,23 +1,39 @@
 # to check: file run itself or got imported
 # condition-> if run_itself: true else false
 import json
+import os
+import hashlib
+
+# name of blockchain is hardcoded several times
+# so making a global variable
+
+BLOCKCHAIN_DIR = "blockchain/"
+
+
+def get_hash(prev_block):
+    with open(BLOCKCHAIN_DIR + prev_block, "rb") as f:
+        content = f.read()
+    return hashlib.md5(content).hexdigest()
 
 
 # function: to create a block
 def write_block(borrower, lender, amount):
+
+    blocks_count = len(os.listdir(BLOCKCHAIN_DIR))
+    prev_block = str(blocks_count)
     data = {
         "borrower": borrower,
         "lender": lender,
         "amount": amount,
         "prev_block": {
-            "hash": "",
-            "filename": ""
+            "hash": get_hash(prev_block),
+            "filename": prev_block
         },
     }
 
-    current_block ='blockchain/' + 
+    current_block = BLOCKCHAIN_DIR + str(blocks_count + 1)
 
-    with open("test", "w") as f:
+    with open(current_block, "w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
         f.write("\n")
         # f.write(text)
