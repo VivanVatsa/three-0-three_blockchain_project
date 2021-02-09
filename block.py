@@ -26,7 +26,7 @@ def check_integrity():
             block = json.load(f)
 
         prev_hash = block.get("prev_block").get("hash")
-        prev_filename = block.get("prev_block").get("prev_filename")
+        prev_filename = block.get("prev_block").get("filename")
 
         print(prev_hash)
         print(prev_filename)
