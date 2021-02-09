@@ -20,7 +20,25 @@ def get_hash(prev_block):
 def check_integrity():
     # get the directory of the files in the block
     files = sorted(os.listdir(BLOCKCHAIN_DIR), key=lambda x: int(x))
-    print(files)
+    # print(files)
+    for file in files[1:]:
+        with open(BLOCKCHAIN_DIR + file) as f:
+            block = json.load(f)
+
+        prev_hash = block.get("prev_block").get("hash")
+        prev_filename = block.get("prev_hash").get("prev_filename")
+
+        print(prev_hash)
+        print(prev_filename)
+
+        actual_hash = get_hash(prev_filename)
+
+        if prev_hash == actual_hash:
+            res = "OK"
+        else:
+            res = "was changed"
+
+        print(f"Block {prev_filename}: {res}")
 
 
 # function: to create a block
