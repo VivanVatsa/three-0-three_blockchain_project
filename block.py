@@ -34,9 +34,9 @@ def check_integrity():
         actual_hash = get_hash(prev_filename)
 
         if prev_hash == actual_hash:
-            res = "OK"
+            res = "BlockChain integrity maintained - OK"
         else:
-            res = "was changed"
+            res = "BlockChain integrity lost - NOT OK"
 
         print(f"Block {prev_filename}: {res}")
 
