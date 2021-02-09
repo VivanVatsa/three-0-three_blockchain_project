@@ -40,8 +40,8 @@ def check_integrity():
 
         # actual_hash = get_hash(prev_hash)
 
-        actual_hash = get_hash(prev_filename)
-        # x = get_hash(4)
+        actual_hash = get_hash(str(prev_filename))
+        # x = get_hash(str(4))
         # print(x)
         if prev_hash == actual_hash:
             # res = "BlockChain integrity maintained - OK"
