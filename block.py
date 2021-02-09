@@ -4,6 +4,13 @@ import json
 import os
 import hashlib
 
+# import os
+
+# path = r"my/path/to/file.txt"
+# assert os.path.isfile(path)
+# with open(path, "r") as f:
+#     pass
+
 # name of blockchain is hardcoded several times
 # so making a global variable
 
@@ -31,12 +38,15 @@ def check_integrity():
         print(prev_hash)
         print(prev_filename)
 
+        # actual_hash = get_hash(prev_hash)
+
         actual_hash = get_hash(prev_filename)
 
         if prev_hash == actual_hash:
-            res = "BlockChain integrity maintained - OK"
+            # res = "BlockChain integrity maintained - OK"
+            res = "ok"
         else:
-            res = "BlockChain integrity lost - NOT OK"
+            res = "was changed"
 
         print(f"Block {prev_filename}: {res}")
 
