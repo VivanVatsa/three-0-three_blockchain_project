@@ -33,7 +33,7 @@ def check_integrity():
             block = json.load(f)
 
         prev_hash = block.get("prev_block").get("hash")
-        prev_filename = block.get("prev_block").get("filename")
+        prev_filename = block.get("prev_block").get(str("filename"))
 
         print(prev_hash)
         print(prev_filename)
@@ -41,7 +41,8 @@ def check_integrity():
         # actual_hash = get_hash(prev_hash)
 
         actual_hash = get_hash(prev_filename)
-
+        # x = get_hash(4)
+        # print(x)
         if prev_hash == actual_hash:
             # res = "BlockChain integrity maintained - OK"
             res = "ok"
