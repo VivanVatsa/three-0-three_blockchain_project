@@ -19,7 +19,7 @@ def get_hash(prev_block):
 # function: to ch   eck the integrity of data
 def check_integrity():
     # get the directory of the files in the block
-    files = sorted(os.listdir(BLOCKCHAIN_DIR))
+    files = sorted(os.listdir(BLOCKCHAIN_DIR), key=lambda x: int(x))
     print(files)
 
 
