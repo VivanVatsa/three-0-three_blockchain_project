@@ -1,7 +1,7 @@
 {
     "borrower": "Joma",
     "lender": "Viktor",
-    "amount": 1000,
+    "amount": 100,
     "prev_block": {
         "hash": "",
         "filename": ""

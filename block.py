@@ -29,6 +29,9 @@ def check_integrity():
     files = sorted(os.listdir(BLOCKCHAIN_DIR), key=lambda x: int(x))
     # print(files)
     for file in files[1:]:
+
+        # assert os.path.isfile(BLOCKCHAIN_DIR)
+
         with open(BLOCKCHAIN_DIR + file) as f:
             block = json.load(f)
 
