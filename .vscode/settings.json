@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "virtual_block\\Scripts\\python.exe"
+    "python.pythonPath": "virtual_block\\Scripts\\python.exe",
+    "cSpell.words": [
+        "Vivan"
+    ]
 }
