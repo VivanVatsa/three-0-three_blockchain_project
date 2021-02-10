@@ -29,6 +29,9 @@ def check_integrity():
     files = sorted(os.listdir(BLOCKCHAIN_DIR), key=lambda x: int(x))
     # print(files)
     for file in files[1:]:
+
+        # assert os.path.isfile(BLOCKCHAIN_DIR)
+
         with open(BLOCKCHAIN_DIR + file) as f:
             block = json.load(f)
 
@@ -41,7 +44,8 @@ def check_integrity():
         # actual_hash = get_hash(prev_hash)
 
         actual_hash = get_hash(prev_filename)
-
+        # x = get_hash(str(4))
+        # print(x)
         if prev_hash == actual_hash:
             # res = "BlockChain integrity maintained - OK"
             res = "ok"
