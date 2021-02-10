@@ -38,11 +38,9 @@ def check_integrity():
         prev_hash = block.get("prev_block").get("hash")
         prev_filename = block.get("prev_block").get("filename")
 
-        print(prev_hash)
-        print(prev_filename)
-
+        # print(prev_hash)
+        # print(prev_filename)
         # actual_hash = get_hash(prev_hash)
-
         actual_hash = get_hash(prev_filename)
         # x = get_hash(str(4))
         # print(x)
