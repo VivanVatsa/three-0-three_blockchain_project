@@ -23,6 +23,12 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/checking")
+def check():
+    results = check_integrity()
+    return render_template("index.html", checking_results=results)
+
+
 if __name__ == "__main__":
     # main()
     # flask automatically start development, when files changed in project

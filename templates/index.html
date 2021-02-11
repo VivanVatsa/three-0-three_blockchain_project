@@ -43,6 +43,23 @@
             </div>
         </div>
     </div>
+
+    <div class="container" ,="," align="center">
+        <div class="row">
+            <div class="col-6 mx-auto mt-5 mb-5 text-center">
+
+                <form action="{{ url_for('check')}}" class="mb-5">
+                    <button class="btn btn-outline-info">check</button>
+                </form>
+
+                {% for res in checking_results %}
+                <div>
+                    Block {{ res['block']}} : {{ res ['result'] }}
+                </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
