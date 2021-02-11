@@ -19,23 +19,23 @@
             <div class="clo-6 mx-auto mt-5">
                 <h1 class="mb-5">Loans</h1>
 
-                <form action="">
+                <form action="{{url_for('index') }}" ,="," method="post">
                     <label for="borrower" class="form-label">Borrower</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon3">Name</span>
-                        <input type="text" class="form-control" id="borrower" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="borrower" aria-describedby="basic-addon3" name="borrower">
                     </div>
 
                     <label for="lender" class="form-label">Lender</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon3">Name</span>
-                        <input type="text" class="form-control" id="lender" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="lender" aria-describedby="basic-addon3" name="lender">
                     </div>
 
                     <label for="amount" class="form-label">Amount</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon3">Rs</span>
-                        <input type="text" class="form-control" id="amount" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="amount" aria-describedby="basic-addon3" name="amount">
                     </div>
 
                     <button class="btn btn-primary">submit</button>
