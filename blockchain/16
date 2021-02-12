@@ -1,0 +1,9 @@
+{
+    "borrower": "hola",
+    "lender": "amigo",
+    "amount": "700",
+    "prev_block": {
+        "hash": "23fdd539f08a98f90a82e270fb9c9b5f",
+        "filename": "15"
+    }
+}
