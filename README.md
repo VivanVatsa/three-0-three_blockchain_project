@@ -101,7 +101,7 @@ python .\app.py
 *project hosted on [**heroku**](https://three-0-three.herokuapp.com)*
 
 -----------------------
-> this application is open-source add your contributions & suggestions and feel free to discuss ideas.
+> this application is open-source add your contributions & suggestions and feel free to discuss ideas @ [Discussions](https://github.com/VivanVatsa/three-0-three/discussions).
 
 
-made with [❤️] by <a href="https://linkedin.com/in/VivanVatsa"><img src="https://img.icons8.com/metro/2x/v.png" alt="drawing" width="40" align="center"></a>
+made with [❤️].
