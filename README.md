@@ -104,4 +104,4 @@ python .\app.py
 > this application is open-source add your contributions & suggestions and feel free to discuss ideas @ [Discussions](https://github.com/VivanVatsa/three-0-three/discussions).
 
 
-made with [❤️].
+made with [❤️] by [Vivan](https://linkedin.com/in/VivanVatsa)
