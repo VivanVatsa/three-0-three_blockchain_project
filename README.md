@@ -25,8 +25,10 @@
 
 
 > FUN FACT: YOU CAN RUN THIS APPLICATION ON YOUR LOCAL MACHINE @ ```localhost:5000```
+<a href=""><img src="https://img.icons8.com/ios/2x/laptop--v2.gif" alt="drawing" width="35" align="right"></a>
 
-> do these steps: {PTR -> always use virtual_environment}
+> do these steps: {PTR -> always use virtual_environment} 
+
 ```bash
 # for python virtual environment
 pip install virtualenv
@@ -55,7 +57,7 @@ python .\app.py
 ```
 
 
-### Magic-in-Making
+### Magic-in-Making <a href=""><img src="https://img.icons8.com/ios/2x/laptop-settings--v3.gif" alt="drawing" width="50" align="center"></a>
 #### What steps I took...
 ##### 1. Visualized the working of a blockchain:
 ![BlockChain](https://github.com/VivanVatsa/three-0-three/blob/main/assets/blockchain_diag.png)
@@ -76,7 +78,8 @@ python .\app.py
 ![block_check](https://github.com/VivanVatsa/three-0-three/blob/main/assets/check_block.png)
 
 
-### Tools-Tape
+### Tools-Tape <a><img src="https://img.icons8.com/ios/2x/swiss-army-knife--v2.gif" alt="drawing" width="50" align="center"></a>
+
 > All development done on **Python Virtual Environment**
 
 > Python Version: 3.9.1
