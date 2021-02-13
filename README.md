@@ -1,11 +1,10 @@
 # three-0-three: *minimalistic-x-blockchain-x-concept-x-project*
-----------------------
+
 **BLOCKCHAIN DEMO**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://three-0-three.herokuapp.com"><img src="https://img.icons8.com/windows/2x/heroku.png" alt="drawing" width="35" align="center"><img src="https://img.icons8.com/cotton/2x/three-way-direction.png" alt="drawing" width="70" align="center">
 </a>
 
-----------------------
 
 > **a simple decentralized blockchain web-app: PoC{Proof-of-Concept} of a decentral blockchain.**
 
